@@ -1,0 +1,292 @@
+@charset "UTF-8";
+/* CSS Document */
+
+p {
+	color: white;
+	font-size: 14px;;
+	background-color: none;
+	text-align: center;
+	margin: 0;
+}
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav  { 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img  { 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body  {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background: black;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #000;
+	height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0px auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 0px;
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 3px #DDD;
+	background: #111111;
+}
+
+/*This is a flex item*/
+#logo
+{
+	width: 400px;
+	margin-top: 20px;
+	padding-left: 50px;
+
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav {
+	margin-left: auto;
+	width: 450px;
+	font-size: 18px;
+	margin-top: 50px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  background-color: none;
+}
+
+#promo {
+	margin-top: 0px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 0px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#promoText {
+	width: 500px;
+}
+
+#promoText p {
+	color: white;
+	font: 40px "source sans pro", sans-serif;
+	margin-top: 100px;
+	line-height: 100px;
+	font-weight: bold;
+}
+
+#promoSubtext p{
+	color: lightgray;
+	font: 15px "source sans pro", sans-serif;
+	margin-top: 0px;
+}
+
+#promoImage {
+	margin-left: 0px;
+	width: 280px;
+}
+
+#productInfo {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	padding-bottom: 80px;
+}
+
+#productImg {
+  border: 1px solid #252525;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  background-color: #252525;
+  margin-bottom: 0px;
+}
+
+#productImg img {
+	border-radius: 3px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+#productText {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#productText p {
+	font-size: 16px;
+	font-family: "source sans pro", sans-serif;
+}
+
+#latestWork {
+	font: 20px "source sans pro", sans-serif;
+	color: white;
+	margin-top: 80px;
+}
+
+.productDesc {
+	width: 200px;
+}
+
+#mainFooter {
+	margin-top: 0px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	background-color: #111111;
+  	border-top: solid 3px #DDD;
+}
+
+#footerNav {
+	padding-top: 10px;
+	margin-right: auto;
+	width: 450px;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+
+#copyRight {
+	margin-left: auto;
+	width: 200px;
+	padding-top: 35px;
+	padding-left: 100px;
+	font-family: "source sans pro", sans-serif;
+
+}
+
+/*Page 2*/
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#contactUs {
+	margin-left: auto;
+	margin-left: 100px;
+	padding: 50px;
+	color: white;
+	background-color: #252525;
+	border-radius: 10px;
+}
+
+#myInfo {
+	margin-left: auto;
+	margin-right: 100px;
+	padding: 50px;
+	color: white;
+	background-color: #252525;
+	border-radius: 10px;
+}
+
+#myInfo p {
+	text-align: left;
+}
+
+/*Page 3*/
+
+#productImages {
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+
+.productImg {
+	width: 920px;
+}
+
+#contentAreaBig {
+	margin-top: 40px;
+	padding-right: 40px;
+	padding-left: 230px;
+	padding-bottom: 40px;
+	width: 450px;
+	color: white;
+}
+
+#contentAreaBig p {
+	text-align: left;
+}
+
+#contentAreaBig h3 {
+	font-size: 20px;
+}
+
+#promoImageBig {
+	width: 920px;
+}
+

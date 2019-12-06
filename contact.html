@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact - Portfolio</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+    <body>
+    	<section id="topBar"></section><!--end topBar-->
+
+    	<div id="siteContainer">
+        	<header id="mainHeader">
+            	<div id="logo">
+                    <img src="images/logo.svg" width="50" height="75" alt="Website logo">   
+                </div><!--end logo-->
+                <nav id="mainNav">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul id="ul">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav><!--end mainNav-->
+            </header><!--end mainHeader-->
+
+            <section id="contentCon">
+            	<div id="contactUs">
+                    <h2>Contact Me</h2>
+                        <br>
+                        <form action="form.php" method="post">
+                            <label>Name:</label><br>
+                            <input type="text" size="30" required>
+                        <br>
+                        <br>
+                        <br>
+                            <label>Email:</label><br>
+                            <input type="Email" size="30" required>
+                        <br>
+                        <br>
+                        <br>
+                            <label>Phone:</label><br>
+                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="30" required>
+                        <br>
+                        <br>
+                        <br>
+                            <label>Comment:</label><br>
+                            <textarea rows="8" cols="40"></textarea>
+                        <br>
+                        <br>
+                        <br>
+                            <input type="submit" value="Submit" required>
+                        </form>   
+                </div><!--end contact-->
+
+
+            	<div id="myInfo">
+                    <h2>My Information</h2>
+                        <br>
+                            <h3>Email:</h3>
+                            <p>benjamin@fanshawe.com</p>
+                        <br>
+                        <br>
+                            <h3>Number:</h3>
+                            <p>+1 (519) 519-8888</p>
+                        <br>
+                        <br>
+                            <h3>Office Address:</h3>
+                            <p>123 Fanshawe Rd.</p>
+                            <p>N6A 123</p>
+                </div><!--end myInfo-->
+            </section><!--end content-->
+
+            <footer id="mainFooter">
+                <div id="footerNav">
+                    <h2 class="hidden">Footer Navigation</h2>
+                    <ul id="ul">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>   
+                </div><!--end FooterNav-->
+
+                <div id="copyRight"><p>All rights reserved<br>2019 © The Carrillo Corp.</p></div><!--end Copyright-->
+            </footer><!--end mainFooter-->
+        </div><!--end siteContainer-->
+
+    <script src="js/main.js"></script>    
+    </body>
+</html>
